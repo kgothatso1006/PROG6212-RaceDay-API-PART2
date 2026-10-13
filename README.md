@@ -23,13 +23,13 @@ The RaceDay API is the backend for the RaceDay event management system. It allow
 
 Prerequisites: .NET 8.0 SDK or newer, Visual Studio 2022 with ASP.NET workload, SQL Server LocalDB (installed with Visual Studio).
 
-Step 1 - Clone the repository: git clone https://github.com/YOUR-USERNAME/PROG6212-RaceDay-API.git then cd PROG6212-RaceDay-API
+Step 1 - Clone this repository to your local machine.
 
-Step 2 - Configure the database: the connection string is already in RaceDay.API/appsettings.json for LocalDB. If you use a different SQL Server instance, update the DefaultConnection value.
+Step 2 - Configure the database: the connection string is already set in RaceDay.API/appsettings.json for LocalDB. If you use a different SQL Server instance, update the DefaultConnection value.
 
 Step 3 - Run migrations: open the Package Manager Console (Tools > NuGet Package Manager > Package Manager Console) and run Update-Database. This creates the RaceDayDB database with all tables and seed data.
 
-Step 4 - Run the API: press F5 in Visual Studio or run dotnet run --project RaceDay.API. The API will be available at Swagger UI https://localhost:7137/swagger and API base URL https://localhost:7137/api
+Step 4 - Run the API: press F5 in Visual Studio or run dotnet run --project RaceDay.API. The API will be available at Swagger UI localhost:7137/swagger and API base URL localhost:7137/api
 
 Step 5 - Run the tests: run dotnet test or in Visual Studio go to Test > Run All Tests.
 
@@ -80,15 +80,15 @@ The test project RaceDay.API.Tests contains xUnit tests covering user registrati
 
 This project uses GitHub Actions for continuous integration. Every push to the main branch triggers checkout of the repository, setup of .NET 8.0, restore of NuGet packages, build in Release configuration, and running all unit tests. The workflow file is located at .github/workflows/dotnet.yml.
 
-CI/CD Status badge: https://github.com/YOUR-USERNAME/PROG6212-RaceDay-API/actions/workflows/dotnet.yml/badge.svg
-
 ## Video Walkthrough
 
-A full walkthrough of the API (Swagger demo, test results, CI/CD) is available here: PASTE YOUR YOUTUBE VIDEO LINK HERE
+A video walkthrough of the API is available and will be linked here once finalised.
 
-## CI/CD Build Screenshot
+## Author
 
-A screenshot of a successful CI/CD build is included in the docs folder of this repository.
+Kgothatso Mosipa
+Module: PROG6212
+Institution: The Independent Institute of Education (Pty) Ltd
 
 ## License
 
